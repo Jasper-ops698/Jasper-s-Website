@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messaging Platform</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+</head>
+    
+<body>
+
+    <!-- Chat Container -->
+    <div class="chat-container private-chat">
+        <h3>Private Messaging</h3>
+        <!-- Chat messages -->
+        <div class="chat-box" id="private-chat-box">
+            <div class="message">
+                Hello! How may i assist you?
+            </div>
+            <div class="message user">
+                This is a private message reply.
+            </div>
+        </div>
+        <!-- Input field for sending messages -->
+         
+        <form class="chat-input" id="private-chat-box">
+            <input type="text" id="private-chat-box" placeholder="Type a message...">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <div class="chat-section group-chat">
+        <h3>Group Messaging</h3>
+        <!-- Group Chat Box -->
+        <div class="chat-box" id="group-chat-box">
+            <div class="message">
+                Group message from user 1.
+            </div>
+            <div class="message user">
+                This is a group message reply.
+            </div>
+        </div>
+            
+            <!-- Group Chat Input -->
+        <form class="chat-input" id="group-chat-form">
+            <input type="text" id="group-message-input" placeholder="Type a group message...">
+            <button type="submit">Send</button>
+        </form> 
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

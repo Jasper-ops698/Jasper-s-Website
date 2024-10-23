@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+    <body>
+         <!-- Header -->
+    <header>
+        <div style="text-align: center">
+            <h1>Shop Here</h1>
+        </div>
+         <!-- Tabs for Navigation -->
+    <div class="auth-container">
+        <a href="index.html" class="Home">Home</a>
+        <a href="products.html" class="Products">Products</a>
+        <a href="services.html" class="Services">Services</a>
+    </div>
+    <div class="header-right">
+        <div class="auth-container">
+            <a href="login.html" class="signin">Sign In</a>
+            <a href="register.html" class="register">Register</a>
+        </div>
+    </div>
+    </header>
+
+   
+
+   
+    <!-- Shopping Section -->
+    <section class="main-container">
+        
+        <div class="left-section">
+            <div class="section-header">
+                <h3>New Items</h3>
+                <div class="search-container">
+                    <input type="text" id="search" placeholder="&#xf002; Search..." class="search-box" oninput="filterContent()">
+                    <button onclick="filterContent()"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="software.jpeg" alt="Software Design">
+                    <p>KES</p>
+                    <button onclick="addToCart('Software Design')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="sofware2.jpeg" alt="Software Debugging">
+                    <p>KES</p>
+                    <button onclick="addToCart('Software Debbugging')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="pcb3.jpeg" alt="Pcb prototyping">
+                    <p>KES</p>
+                    <button onclick="addToCart('PCB Prototyping')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="pcb2.jpeg" alt="Pcb Desing">
+                    <p>KES</p>
+                    <button onclick="addToCart('PCB Design')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="1.jpeg" alt="Web Design">
+                    <p>KES</p>
+                    <button onclick="addToCart('Web Design')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div class="section-header">
+                <h3>Second-Hand Items</h3>
+                <div class="search-container">
+                    <input type="text" id="search" placeholder="&#xf002; Search..." class="search-box" oninput="filterContent">
+                    <button onclick="filterContent()"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="4.jpeg" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="1.jpeg" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="4.jpeg" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="6.png" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="4.jpeg" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="1.jpeg" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="4.jpeg" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="6.png" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="4.jpeg" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="1.jpeg" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="4.jpeg" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="6.png" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="4.jpeg" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="1.jpeg" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="6.png" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="4.jpeg" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="1.jpeg" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="4.jpeg" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="6.png" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="4.jpeg" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="1.jpeg" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="4.jpeg" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="6.png" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="4.jpeg" alt="Welcome">
+                    <p>KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="5.png" alt="Welcome">
+                    <p>1000KES</p>
+                    <button onclick="addToCart('Welcome')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+            
+           
+        </div>
+       
+    </section>
+    <footer>
+        <div>
+            <h3>Contact Info</h3>
+            <p>Email: bkitib@gmail.com</p>
+            <p>Phone: (+254) 797-436723</p>
+        </div>
+        <div>
+            <h3>Follow Us</h3>
+            <a href="https:www.instagram.com/engi.neer7858?igsh=YzljYk10Dg3Zg==" target="blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a><br>
+            <a href="https:www.linkedin.com/in/emmanuel-nyale-ab4b3b17a" target="blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a><br>
+            <a href="https://wa.me/254797436723" target="blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+        
+    <footer>
+        <p>&copy; 2024 Jasper's</p>
+    </footer>
+    <script src="script.js"></script>  
+    </body>
+<html>

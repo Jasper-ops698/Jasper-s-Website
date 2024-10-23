@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=0,">
+    <title>
+        "Jasper's: Quality Products and Services | Your Needs Covered."
+    </title>
+    <script>
+        function setSEOTitle() {
+            const title="Jasper's: Quality Products and Services | Your Needs Covered.";
+            document.title = title;
+        }
+        window.onload = setSEOTitle;
+    </script>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Jasper's</h1>
+        <p>Quality Products and Services | Your Needs Covered.</p>
+        <script>
+            $(document).ready(function() {
+                $("#loadMore").click(function() {
+                    // Simulating an Ajax request
+                    $.ajax({
+                        url: "https://jsonplaceholder.typicode.com/posts/1", // Example API endpoint
+                        method: "GET",
+                        success: function(data) {
+                            // Append new content with an icon
+                            $("#content").append(`<h2><i class="fas fa-check-circle"></i> ${data.title}</h2><p>${data.body}</p>`);
+                        },
+                        error: function() {
+                            alert("Error loading content.");
+                        }
+                    });
+                });
+            });
+        </script>
+    
+        <!-- Search bar and Sign-In container -->
+        <div class="header-right">
+            <div class="search-container">
+                <input type="text" id="search" placeholder="&#xf002; Search..." class="search-box" oninput="filterContent()">
+                <button onclick="performSearch()"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="auth-container">
+                <a href="login.html" class="signin">Sign In</a>
+                <a href="register.html" class="register">Register</a>
+            </div>
+        </div>
+        <!-- Tabs navigation -->
+         <nav>
+            <ul>
+                <li class="dropdown">
+                    <button class="dropbtn">Load More...</button>
+                    <div class="dropdown-content">
+                        
+                        <a href="products.html">Products</a>
+                        <a href="services.html">Services</a>
+                    </div>
+                </li>
+            </ul>
+         </nav>
+    <button class="chat-btn">Chat</button>
+
+    <!-- Modal overlay -->
+    <div class="modal-overlay" id="modal-overlay"></div>
+
+    <!-- Chat pop-up modal -->
+    <div class="chat-modal" id="chat-modal">
+        <button class="close-btn" id="close-btn">&times;</button>
+        
+        <!-- Chat Container with Two Horizontal Sections -->
+        <div class="chat-container">
+            <div class="chat-section group-chat">
+                <h3>Group Messaging</h3>
+                <!-- Group Chat Box -->
+                <div class="chat-box" id="group-chat-box">
+                </div>
+
+                <!-- Group Chat Input -->
+                <form class="chat-input" id="group-chat-form">
+                    <input type="text" id="group-message-input" placeholder="Type a group message...">
+                    <button type="submit">Send</button>
+                </form>
+             </div>
+        </div>
+    </div>           
+    </header>
+    
+    <!-- Image Carousel -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+           <img src="1.jpeg" style="width:100%" alt="Slide 1">
+        </div>
+        <div class="mySlides fade">
+            <img src="2.jpeg" style="width:100%" alt="Slide 2">
+         </div>
+         <div class="mySlides fade">
+            <img src="3.png" style="width:100%" alt="Slide 3">
+         </div>
+         <div class="mySlides fade">
+            <img src="4.jpeg" style="width:100%" alt="Slide 4">
+         </div>
+         <div class="mySlides fade">
+            <img src="5.png" style="width:100%" alt="Slide 5">
+         </div>
+         <div class="mySlides fade">
+            <img src="6.png" style="width:100%" alt="Slide 6">
+         </div>
+    </div>
+
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div>
+            <h3>Contact Info</h3>
+            <p>Email: bkitib@gmail.com</p>
+            <p>Phone: (+254) 797436723</p>
+        </div>
+        <div>
+            <h3>Services</h3>
+            <p>Web Design</p>
+            <p>Software Development</p>
+            <p>PCB Design</p>
+        </div>
+        <div>
+            <h3>Social Media</h3>
+            <a href="https://www.instagram.com/engi.neer7858" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a><br>
+            <a href="https://www.linkedin.com/in/emmanuel-nyale-ab4b3b17a" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a><br>
+            <a href="https://wa.me/254797436723" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </footer>
+    
+    <footer>
+        <p>&copy; 2024 Jasper's</p>
+    </footer>
+
+<script src="script.js"></script> <!-- Link to JavaScript file -->
+</script>
+        
+ <link rel="stylesheet" href="styles.css">     
+</body>
+</html>
